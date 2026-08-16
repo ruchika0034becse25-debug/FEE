@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ruchika">
+    <link rel="'stylesheet" href="">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100dvh;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+           
+            color: white;
+        }
+        section {padding: 10px;}
+        .box {background-color: rgb(88, 226, 235);
+              color: white;
+              padding: 1rem;}
+        .gc{
+            display:grid;
+            gap:0.5rem;
+
+            grid-template-columns: repeat(3, 150px);
+            grid-template-rows: repeat(3, 150px);
+            place-content: center;
+        }
+
+        #m1{
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:2;
+        }
+
+        #m2{
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+        #m3{
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+        #m5{
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:3;
+            grid-row-end:4;
+           
+        }
+        
+
+
+        
+        @media(min-width: 767px){
+            .gc{
+                grid-template-columns: repeat(3,250px);
+                grid-template-rows: repeat(3,150px);
+            }
+        }
+        @media(min-width: 1024px){
+            .gc{
+                grid-template-columns: repeat(3, 350px);
+                grid-template-rows: repeat(3, 150px);
+            }
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section class="box" style="height: 10vh">
+        <span style="font-size:2.5rem; margin-right:1rem">&#9813</span>
+        Header/NavBar
+    </section>
+    <section
+    class="box gc"
+    style="height: 80vh; background-color: white;">
+    <main class="box" id="m1">content-1</main>
+    <main class="box" id="m2">content-2</main>
+    <main class="box" id="m3">content-3</main>
+    <main class="box" id="m4">content-4</main>
+    <main class="box" id="m5">content-5</main>
+    
+    </section>
+    <section class="box" style="height: 10vh; position:absolute; bottom:0; left:0; width:100%;">
+        <span style="font-size:2.5rem; margin-right:1rem">&#9776</span>
+        Footer
+    </section>
+    <script></script>
+    
+</body>
+</html>
