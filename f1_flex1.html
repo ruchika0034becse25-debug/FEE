@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ruchika">
+    <title>Flex Box</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: white;
+        }
+
+        section{
+            padding: 10px;
+        }
+
+        .box{
+            background-color: #7566d3;
+        }
+
+        .fc{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item{
+            height: 100px;
+            width: 200px;
+            background-color: #9391ff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="box" style="height: 10vh">
+        G5 Sem 3
+    </section>
+
+    <section class="fc" style="height: 80vh; background-color: #f5f7fa;">
+        <main class="item">
+            Main-1
+        </main>
+
+        <main class="item">
+            Main-2
+        </main>
+
+        <main class="item">
+            Main-3
+        </main>
+    </section>
+
+    <section class="box" style="height: 10vh; width: 100%;">
+        Ruchika
+    </section>
+
+</body>
+</html>
